@@ -1,0 +1,101 @@
+.maininfo {
+  position: relative;
+  padding: 100px 0;
+  .infotext {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 9.375rem;
+    font-family: "Do Hyeon";
+    color: #000;
+  }
+  .imginfo {
+    width: 80%;
+    margin: 0 auto;
+    img {
+      animation: point 1.5s both;
+    }
+  }
+  // .imginfopoint {
+  //   position: absolute;
+  //   top: 35%;
+  //   right: 15%;
+  //   // transform: translateY(-50%);
+  //   width: 150px;
+  //   animation: point 3s infinite linear;
+  //   // }
+  @keyframes point {
+    0% {
+      transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+.profilewrap {
+  display: flex;
+  justify-content: center;
+  .profileimg {
+    width: 20%;
+    margin-right: 100px;
+  }
+  .profileinfo {
+    .infoul {
+      display: flex;
+      flex-direction: column;
+      li,
+      span {
+        display: block;
+      }
+      .license_list {
+        display: flex;
+        .infoday {
+          margin-right: 10px;
+        }
+      }
+    }
+    .tools {
+      flex-direction: row;
+    }
+    .title {
+      font-size: 26px;
+      font-family: "Do Hyeon";
+    }
+    .infoday {
+      font-size: 18px;
+    }
+    .profiletext {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  .tool {
+    display: flex;
+  }
+}

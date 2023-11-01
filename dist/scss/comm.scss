@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import "reset";
+
+body {
+  background: #000;
+  color: #fff;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.section {
+  height: 100vh;
+}
+#header {
+  position: relative;
+  // box-shadow: 0 0 2px 0 #fff;
+  .logo {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 1.5%;
+    width: 20%;
+    margin-top: 15px;
+    a {
+      display: block;
+    }
+  }
+  .day_year {
+    padding: 1% 2%;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: right;
+    font-family: "Do Hyeon";
+  }
+}
+
+@import "style";
