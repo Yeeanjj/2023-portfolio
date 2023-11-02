@@ -1,6 +1,14 @@
 @charset "UTF-8";
 @import "reset";
 
+@font-face {
+  font-family: "Giants-Inline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: #000;
   color: #fff;
@@ -24,6 +32,16 @@ img {
     margin-top: 15px;
     a {
       display: block;
+      .logotxt {
+        position: absolute;
+        top: -7%;
+        left: 0;
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        font-family: "Giants-Inline";
+        width: 100%;
+      }
     }
   }
   .day_year {
@@ -32,8 +50,26 @@ img {
     font-size: 1.5rem;
     font-weight: 500;
     text-align: right;
-    font-family: "Do Hyeon";
+    font-family: "Giants-Inline";
   }
 }
-
+#fp-nav {
+  ul {
+    li {
+      width: 20px;
+      height: 20px;
+      a {
+        &.active {
+          span {
+            background: url(../../images/Asset\ 4.svg) no-repeat 0 0;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            margin: -10px 0 0 -10px;
+          }
+        }
+      }
+    }
+  }
+}
 @import "style";

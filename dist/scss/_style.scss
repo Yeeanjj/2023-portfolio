@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
     display: block;
     font-size: 9.375rem;
-    font-family: "Do Hyeon";
+    font-family: "Giants-Inline";
     color: #000;
   }
   .imginfo {
@@ -19,14 +19,6 @@
       animation: point 1.5s both;
     }
   }
-  // .imginfopoint {
-  //   position: absolute;
-  //   top: 35%;
-  //   right: 15%;
-  //   // transform: translateY(-50%);
-  //   width: 150px;
-  //   animation: point 3s infinite linear;
-  //   // }
   @keyframes point {
     0% {
       transform: scale3d(1, 1, 1);
@@ -61,41 +53,112 @@
 .profilewrap {
   display: flex;
   justify-content: center;
+  height: 55vh;
   .profileimg {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     width: 20%;
+    height: 56%;
     margin-right: 100px;
   }
   .profileinfo {
-    .infoul {
-      display: flex;
-      flex-direction: column;
-      li,
-      span {
-        display: block;
-      }
-      .license_list {
-        display: flex;
-        .infoday {
-          margin-right: 10px;
-        }
-      }
-    }
-    .tools {
-      flex-direction: row;
-    }
-    .title {
-      font-size: 26px;
-      font-family: "Do Hyeon";
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    li,
+    span {
+      display: block;
     }
     .infoday {
-      font-size: 18px;
+      margin-right: 10px;
+    }
+    .title {
+      font-size: 30px;
+      font-family: "Giants-Inline";
     }
     .profiletext {
-      font-size: 20px;
-      font-weight: 500;
+      font-size: 18px;
+      font-weight: 600;
     }
   }
   .tool {
     display: flex;
+    align-items: center;
+
+    .tool_tit {
+      margin-right: 25px;
+    }
+    .tools {
+      display: flex;
+      li {
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
   }
+}
+.scroll_Festar {
+  position: relative;
+}
+.desktop_one {
+  width: 40%;
+  height: 400px;
+  margin-left: 6%;
+  .festarbox {
+    width: 100%;
+    height: 100%;
+    background: url(../../images/portfolio_Festar.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: all 5s;
+    border-radius: 5%;
+    &:hover {
+      background-position: bottom;
+    }
+  }
+}
+.portinfo_one {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  span {
+    display: block;
+  }
+  .type {
+    font-size: 24px;
+    font-family: "Giants-Inline";
+    color: #e73656;
+  }
+  .porttit {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+.boxlst {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  .boxtit {
+    width: 90px;
+    font-size: 20px;
+    font-family: "Giants-Inline";
+    margin-right: 15px;
+  }
+  .boxtxt {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.boxtxtwrap {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
 }
