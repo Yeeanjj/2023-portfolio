@@ -130,6 +130,11 @@ body {
   color: #222;
 }
 
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+}
 /* color값은 디자인가이드에 맞게사용 */
 a {
   color: #222;
@@ -283,6 +288,10 @@ img {
   width: 100%;
 }
 
+span {
+  display: block;
+}
+
 .section {
   height: 100vh;
 }
@@ -388,15 +397,13 @@ img {
 .profilewrap {
   display: flex;
   justify-content: center;
-  height: 55vh;
 }
 .profilewrap .profileimg {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   width: 20%;
   height: 56%;
-  margin-right: 100px;
+  margin-right: 10%;
+  padding-top: 5%;
 }
 .profilewrap .profileinfo {
   display: flex;
@@ -411,11 +418,11 @@ img {
   margin-right: 10px;
 }
 .profilewrap .profileinfo .title {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: "Giants-Inline";
 }
 .profilewrap .profileinfo .profiletext {
-  font-size: 18px;
+  font-size: 1.1875rem;
   font-weight: 600;
 }
 .profilewrap .tool {
@@ -439,44 +446,103 @@ img {
   height: 60px;
 }
 
-.scroll_Festar {
+.scroll_Festar,
+.scroll_SoundWave {
   position: relative;
 }
 
-.desktop_one {
-  width: 40%;
-  height: 400px;
-  margin-left: 6%;
+.desktop {
+  position: relative;
+  width: 35%;
+  margin-left: 10%;
 }
-.desktop_one .festarbox {
-  width: 100%;
-  height: 100%;
+.desktop .festarbox {
+  position: absolute;
+  top: 5.5%;
+  left: 11.5%;
+  width: 77.8%;
+  height: 82%;
   background: url(../../images/portfolio_Festar.png) no-repeat;
   background-size: cover;
   background-position: top;
-  transition: all 5s;
-  border-radius: 5%;
+  transition: all 4.5s;
 }
-.desktop_one .festarbox:hover {
+.desktop .festarbox:hover {
+  background-position: bottom;
+}
+.desktop .soundbox {
+  position: absolute;
+  top: 5.5%;
+  left: 11.5%;
+  width: 77.8%;
+  height: 82%;
+  background: url(../../images/portfolio_suondwave.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+  transition: all 4.5s;
+}
+.desktop .soundbox:hover {
   background-position: bottom;
 }
 
-.portinfo_one {
+.phon {
+  position: relative;
+  width: 15%;
+  margin-left: 20%;
+}
+.phon .lazulibox {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 98%;
+  height: 98%;
+  background: url(../../images/portfolio_lazuli.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 10%;
+}
+.phon .lazulibox:hover {
+  background-position: bottom;
+}
+
+.portinfo {
   position: absolute;
   top: 50%;
-  right: 6%;
+  right: 15%;
   transform: translateY(-50%);
+  width: 33%;
 }
-.portinfo_one span {
-  display: block;
+
+@media screen and (max-width: 1440px) {
+  .portinfo {
+    right: 5%;
+  }
 }
-.portinfo_one .type {
-  font-size: 24px;
+.type {
+  font-size: 1.75rem;
   font-family: "Giants-Inline";
   color: #e73656;
 }
-.portinfo_one .porttit {
-  font-size: 28px;
+
+.type-two {
+  position: relative;
+  color: #333;
+}
+.type-two::after {
+  z-index: -1;
+  bottom: 10%;
+  left: -3px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 36.5%;
+  height: 35px;
+  background: #fff;
+  opacity: 0.9;
+}
+
+.porttit {
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
@@ -487,17 +553,71 @@ img {
 }
 .boxlst .boxtit {
   width: 90px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Giants-Inline";
   margin-right: 15px;
 }
 .boxlst .boxtxt {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .boxtxtwrap {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-top: 15px;
+}
+
+.togowrap {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.togowrap .porttogo_list {
+  display: block;
+  margin-right: 15px;
+}
+.togowrap .porttogo_list a {
+  display: block;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: "Giants-Inline";
+  text-align: center;
+  color: #e73656;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+.togowrap .porttogo_list a:hover {
+  color: #fff;
+  background: #e73656;
+}
+
+.togosound {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.togosound .porttogo_list {
+  display: block;
+  margin-right: 15px;
+}
+.togosound .porttogo_list a {
+  display: block;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: "Giants-Inline";
+  text-align: center;
+  color: #fff;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+.togosound .porttogo_list a:hover {
+  color: #333;
+  background: white;
 }/*# sourceMappingURL=comm.css.map */
