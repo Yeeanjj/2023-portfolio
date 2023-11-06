@@ -327,3 +327,55 @@
     }
   }
 }
+.contact {
+  .conimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    svg {
+      width: 15%;
+    }
+    .conimgtxt {
+      font-size: 60px;
+      font-family: "LeeSeoyun";
+      margin-top: 25px;
+    }
+  }
+  .contactwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .conlist {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .fa-envelope-open {
+        position: relative;
+        font-size: 60px;
+        &:hover {
+          &::after {
+            display: block;
+            transition: all 3s;
+          }
+        }
+        &::after {
+          display: none;
+          position: absolute;
+          bottom: 15%;
+          left: -330px;
+          display: block;
+          content: "seaju0527@naver.com";
+          font-size: 24px;
+        }
+      }
+      .my-git {
+        width: 20%;
+        height: 20%;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -338,12 +338,16 @@ span {
   height: 20px;
 }
 #fp-nav ul li a.active span {
-  background: url(../../images/Asset\ 4.svg) no-repeat 0 0;
+  background: url(../../images/Asset3.png) no-repeat 0 0;
   background-size: cover;
   width: 100%;
   height: 100%;
   margin: -10px 0 0 -10px;
   animation: rotate 4s infinite linear;
+}
+#fp-nav ul li .fp-right {
+  font-weight: 600;
+  margin-right: 10px;
 }
 
 @keyframes rotate {
@@ -354,6 +358,10 @@ span {
     transform: rotate(365deg);
   }
 }
+.fp-watermark {
+  display: none;
+}
+
 @font-face {
   font-family: "LeeSeoyun";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff") format("woff");
@@ -692,4 +700,53 @@ span {
 .togolazuli .porttogo_list a:hover {
   color: #fff;
   background: #32abdf;
+}
+
+.contact .conimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .conimg svg {
+  width: 15%;
+}
+.contact .conimg .conimgtxt {
+  font-size: 60px;
+  font-family: "LeeSeoyun";
+  margin-top: 25px;
+}
+.contact .contactwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contactwrap .conlist {
+  margin-right: 30px;
+}
+.contact .contactwrap .conlist:last-child {
+  margin-right: 0;
+}
+.contact .contactwrap .conlist .fa-envelope-open {
+  position: relative;
+  font-size: 60px;
+}
+.contact .contactwrap .conlist .fa-envelope-open:hover::after {
+  display: block;
+  transition: all 3s;
+}
+.contact .contactwrap .conlist .fa-envelope-open::after {
+  display: none;
+  position: absolute;
+  bottom: 15%;
+  left: -330px;
+  display: block;
+  content: "seaju0527@naver.com";
+  font-size: 24px;
+}
+.contact .contactwrap .conlist .my-git {
+  width: 20%;
+  height: 20%;
+}
+.contact .contactwrap .conlist .my-git a {
+  display: block;
 }/*# sourceMappingURL=comm.css.map */
