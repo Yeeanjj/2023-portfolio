@@ -20,10 +20,10 @@
     color: #000;
   }
   .imginfo {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     img {
-      animation: point 1.5s both;
+      animation: point 2s both;
     }
   }
   @keyframes point {
@@ -94,14 +94,11 @@
     .education_tit {
       color: #fefcef;
     }
-    .license_tit {
-      color: #e8fba9;
-    }
-    .tool_tit {
-      color: #32abdf;
-    }
+    // .license_tit {
+    //   color: #e8fba9;
+    // }
     .profiletext {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
     .name {
       font-size: 50px;
@@ -111,11 +108,13 @@
       opacity: 0.7;
     }
   }
-  .tool {
-    .tool_tit {
+  .skill {
+    .skill_tit {
       margin-right: 25px;
+
+      color: #e8fba9;
     }
-    .tools {
+    .skills {
       display: flex;
       li {
         margin-right: 15px;
@@ -127,6 +126,18 @@
         width: 50px;
         height: 40px;
       }
+    }
+  }
+  .pointwrap {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .pointlist {
+      display: block;
+      font-size: 30px;
+      font-family: "LeeSeoyun";
+      padding: 10px;
+      color: #fff;
     }
   }
 }
@@ -328,12 +339,16 @@
   }
 }
 .contact {
+  position: relative;
   .conimg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    svg {
+    margin-bottom: 30px;
+    .card {
       width: 15%;
+      height: 350px;
+      line-height: 350px;
     }
     .conimgtxt {
       font-size: 60px;
@@ -346,36 +361,58 @@
     justify-content: center;
     align-items: center;
     .conlist {
-      margin-right: 30px;
+      margin-right: 50px;
       &:last-child {
         margin-right: 0;
       }
-      .fa-envelope-open {
+      .email {
         position: relative;
-        font-size: 60px;
-        &:hover {
-          &::after {
-            display: block;
-            transition: all 3s;
-          }
+        &::before {
+          display: block;
+          content: "\e158";
+          font-size: 80px;
+          font-family: "Material Symbols Outlined";
+          color: #fff;
         }
-        &::after {
+        .email_hover {
           display: none;
           position: absolute;
-          bottom: 15%;
-          left: -330px;
-          display: block;
-          content: "seaju0527@naver.com";
-          font-size: 24px;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          font-size: 1.875rem;
+          font-family: "LeeSeoyun";
+        }
+        &:hover {
+          &::before {
+            z-index: -1;
+            color: #000;
+          }
+          .email_hover {
+            display: block;
+          }
         }
       }
       .my-git {
-        width: 20%;
+        width: 80px;
         height: 20%;
         a {
           display: block;
+          width: 100%;
         }
       }
+    }
+  }
+  .con_copwrap {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    color: #999;
+    text-align: center;
+    .barcode-canvas {
+      width: 475px;
+      margin-bottom: 10px;
     }
   }
 }

@@ -44,10 +44,19 @@ span {
         top: -7%;
         left: 0;
         display: block;
-        color: #fff;
         font-size: 30px;
         font-family: "Giants-Inline";
         width: 100%;
+        background: linear-gradient(
+          to right top,
+          #56e7f2,
+          #c2a7de,
+          #e8fba9,
+          #32abdf,
+          #fefcef
+        );
+        color: transparent;
+        -webkit-background-clip: text;
       }
     }
   }
@@ -58,6 +67,16 @@ span {
     font-weight: 500;
     text-align: right;
     font-family: "Giants-Inline";
+    background: linear-gradient(
+      to right,
+      #56e7f2,
+      #c2a7de,
+      #e8fba9,
+      #32abdf,
+      #fefcef
+    );
+    color: transparent;
+    -webkit-background-clip: text;
   }
 }
 #fp-nav {
@@ -78,8 +97,9 @@ span {
         }
       }
       .fp-right {
-        font-weight: 600;
+        font-size: 20px;
         margin-right: 10px;
+        font-family: "LeeSeoyun";
       }
     }
   }
@@ -92,8 +112,20 @@ span {
     transform: rotate(365deg);
   }
 }
+
 .fp-watermark {
   display: none;
 }
 
+[data-cursor] {
+  z-index: 50;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: url(../../images/favicon.png) no-repeat;
+  background-size: cover;
+  mix-blend-mode: difference;
+  transition: 0.25s linear;
+  pointer-events: none;
+}
 @import "style";
