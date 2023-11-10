@@ -5,6 +5,6 @@ $(".card").flip({
 
 document.addEventListener("DOMContentLoaded", () => {
   new window["Cursor"]({
-    targets: ["a", "img", "li"],
+    targets: ["a"],
   });
 });

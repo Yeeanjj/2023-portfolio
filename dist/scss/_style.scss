@@ -57,6 +57,20 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .maininfo {
+    .infotext {
+      font-size: 85px;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .maininfo {
+    .infotext {
+      font-size: 110px;
+    }
+  }
+}
 .profilewrap {
   display: flex;
   justify-content: center;
@@ -141,6 +155,23 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .profilewrap {
+    .profileinfo {
+      .profiletext {
+        font-size: 18px;
+      }
+      .name {
+        font-size: 40px;
+      }
+    }
+    .pointwrap {
+      .pointlist {
+        font-size: 24px;
+      }
+    }
+  }
+}
 .scroll_Festar,
 .scroll_SoundWave,
 .scroll_Lazuli {
@@ -207,6 +238,20 @@
     width: 20%;
   }
 }
+@media screen and (max-width: 1024px) {
+  .phon {
+    .lazulibox {
+      border-radius: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .phon {
+    .lazulibox {
+      border-radius: 30px;
+    }
+  }
+}
 .portinfo {
   display: flex;
   flex-direction: column;
@@ -217,9 +262,9 @@
   transform: translateY(-50%);
   width: 35%;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1024px) {
   .portinfo {
-    right: 8%;
+    gap: 20px;
   }
 }
 .type {
@@ -239,6 +284,16 @@
   font-size: 3.125rem;
   font-weight: 700;
 }
+@media screen and (max-width: 1024px) {
+  .porttit {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .porttit {
+    font-size: 42px;
+  }
+}
 .boxlst {
   display: flex;
   align-items: center;
@@ -254,11 +309,37 @@
     font-weight: 400;
   }
 }
+@media screen and (max-width: 1024px) {
+  .boxlst {
+    .boxtit {
+      font-size: 18px;
+    }
+    .boxtxt {
+      font-size: 16px;
+    }
+    .lazulitxt {
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .boxlst {
+    .lazulitxt {
+      width: 80%;
+    }
+  }
+}
 .boxtxtwrap {
   font-size: 1.125rem;
   font-weight: 400;
   margin-top: 30px;
   opacity: 0.8;
+}
+@media screen and (max-width: 1024px) {
+  .boxtxtwrap {
+    font-size: 16px;
+    margin-top: 20px;
+  }
 }
 .togowrap {
   display: flex;
@@ -413,6 +494,59 @@
     .barcode-canvas {
       width: 475px;
       margin-bottom: 10px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contact {
+    .conimg {
+      margin-bottom: 15px;
+      .card {
+        width: 25%;
+      }
+      .conimgtxt {
+        font-size: 45px;
+      }
+    }
+    .con_copwrap {
+      .barcode-canvas {
+        width: 300px;
+      }
+      .conlist {
+        .email {
+          &::before {
+            font-size: 60px;
+          }
+          .email_hover {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .contact {
+    .conimg {
+      // margin-bottom: 15px;
+      .card {
+        width: 20%;
+      }
+    }
+    .contactwrap {
+      .conlist {
+        .my-git {
+          .gitimg {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+    .con_copwrap {
+      .barcode-canvas {
+        width: 400px;
+      }
     }
   }
 }
