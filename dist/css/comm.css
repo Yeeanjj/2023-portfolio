@@ -439,14 +439,14 @@ span {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .maininfo .infotext {
-    font-size: 85px;
-  }
-}
 @media screen and (max-width: 1440px) {
   .maininfo .infotext {
     font-size: 110px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .maininfo .infotext {
+    font-size: 85px;
   }
 }
 .profilewrap {
@@ -607,14 +607,14 @@ span {
   width: 20%;
 }
 
-@media screen and (max-width: 1024px) {
-  .phon .lazulibox {
-    border-radius: 20px;
-  }
-}
 @media screen and (max-width: 1440px) {
   .phon .lazulibox {
     border-radius: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .phon .lazulibox {
+    border-radius: 20px;
   }
 }
 .portinfo {
@@ -654,14 +654,14 @@ span {
   font-weight: 700;
 }
 
-@media screen and (max-width: 1024px) {
-  .porttit {
-    font-size: 30px;
-  }
-}
 @media screen and (max-width: 1440px) {
   .porttit {
     font-size: 42px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .porttit {
+    font-size: 30px;
   }
 }
 .boxlst {
@@ -680,6 +680,11 @@ span {
   font-weight: 400;
 }
 
+@media screen and (max-width: 1440px) {
+  .boxlst .lazulitxt {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .boxlst .boxtit {
     font-size: 18px;
@@ -689,11 +694,6 @@ span {
   }
   .boxlst .lazulitxt {
     width: 70%;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .boxlst .lazulitxt {
-    width: 80%;
   }
 }
 .boxtxtwrap {
@@ -867,6 +867,18 @@ span {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1440px) {
+  .contact .conimg .card {
+    width: 20%;
+  }
+  .contact .contactwrap .conlist .my-git .gitimg {
+    width: 70px;
+    height: 70px;
+  }
+  .contact .con_copwrap .barcode-canvas {
+    width: 400px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .contact .conimg {
     margin-bottom: 15px;
@@ -885,17 +897,5 @@ span {
   }
   .contact .con_copwrap .conlist .email .email_hover {
     font-size: 24px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .contact .conimg .card {
-    width: 20%;
-  }
-  .contact .contactwrap .conlist .my-git .gitimg {
-    width: 70px;
-    height: 70px;
-  }
-  .contact .con_copwrap .barcode-canvas {
-    width: 400px;
   }
 }/*# sourceMappingURL=comm.css.map */
