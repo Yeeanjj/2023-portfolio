@@ -57,13 +57,6 @@
     }
   }
 }
-@media screen and (max-width: 1024px) {
-  .maininfo {
-    .infotext {
-      font-size: 85px;
-    }
-  }
-}
 @media screen and (max-width: 1440px) {
   .maininfo {
     .infotext {
@@ -71,6 +64,14 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .maininfo {
+    .infotext {
+      font-size: 85px;
+    }
+  }
+}
+
 .profilewrap {
   display: flex;
   justify-content: center;
@@ -238,13 +239,6 @@
     width: 20%;
   }
 }
-@media screen and (max-width: 1024px) {
-  .phon {
-    .lazulibox {
-      border-radius: 20px;
-    }
-  }
-}
 @media screen and (max-width: 1440px) {
   .phon {
     .lazulibox {
@@ -252,6 +246,14 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .phon {
+    .lazulibox {
+      border-radius: 20px;
+    }
+  }
+}
+
 .portinfo {
   display: flex;
   flex-direction: column;
@@ -284,16 +286,17 @@
   font-size: 3.125rem;
   font-weight: 700;
 }
-@media screen and (max-width: 1024px) {
-  .porttit {
-    font-size: 30px;
-  }
-}
 @media screen and (max-width: 1440px) {
   .porttit {
     font-size: 42px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .porttit {
+    font-size: 30px;
+  }
+}
+
 .boxlst {
   display: flex;
   align-items: center;
@@ -309,6 +312,13 @@
     font-weight: 400;
   }
 }
+@media screen and (max-width: 1440px) {
+  .boxlst {
+    .lazulitxt {
+      width: 80%;
+    }
+  }
+}
 @media screen and (max-width: 1024px) {
   .boxlst {
     .boxtit {
@@ -322,13 +332,7 @@
     }
   }
 }
-@media screen and (max-width: 1440px) {
-  .boxlst {
-    .lazulitxt {
-      width: 80%;
-    }
-  }
-}
+
 .boxtxtwrap {
   font-size: 1.125rem;
   font-weight: 400;
@@ -497,6 +501,31 @@
     }
   }
 }
+@media screen and (max-width: 1440px) {
+  .contact {
+    .conimg {
+      // margin-bottom: 15px;
+      .card {
+        width: 20%;
+      }
+    }
+    .contactwrap {
+      .conlist {
+        .my-git {
+          .gitimg {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+    .con_copwrap {
+      .barcode-canvas {
+        width: 400px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1024px) {
   .contact {
     .conimg {
@@ -521,31 +550,6 @@
             font-size: 24px;
           }
         }
-      }
-    }
-  }
-}
-@media screen and (max-width: 1440px) {
-  .contact {
-    .conimg {
-      // margin-bottom: 15px;
-      .card {
-        width: 20%;
-      }
-    }
-    .contactwrap {
-      .conlist {
-        .my-git {
-          .gitimg {
-            width: 70px;
-            height: 70px;
-          }
-        }
-      }
-    }
-    .con_copwrap {
-      .barcode-canvas {
-        width: 400px;
       }
     }
   }
